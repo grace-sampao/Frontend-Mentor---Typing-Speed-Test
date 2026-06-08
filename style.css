@@ -1,0 +1,19 @@
+@media screen and (min-width: 320px) and (max-width: 1439px) {
+  form#difficulty-desktop {
+    display: none;
+  }
+
+  form#mode-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  select#difficulty-mobile {
+    display: none;
+  }
+
+  select#mode-mobile {
+    display: none;
+  }
+}
