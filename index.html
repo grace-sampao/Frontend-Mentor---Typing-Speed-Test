@@ -1,57 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Typing Speed Test</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Typing Speed Test</title>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <source
+          media="(min-width:1440px)"
+          srcset="./assets/images/logo-large.svg"
+        />
+        <source
+          media="(min-width:320px)"
+          srcset="./assets/images/logo-small.svg"
+        />
+        <img src="./assets/images/logo-small.svg" alt="logo-small" />
+      </picture>
 
-  Personal best: <!-- PB --> WPM
+      <div class="personal-best-score">
+        <img
+          src="./assets/images/icon-personal-best.svg"
+          alt="icon-personal-best"
+        />
+        <p class="personal-best" id="personal-best">Best:</p>
+        <p class="personal-best-score" id="personal-best-score">92 WPM</p>
+      </div>
+    </header>
 
-  WPM: <!-- WPM -->
-  Accuracy: <!-- Accuracy -->
-  Time: <!-- Time -->
+    <main>
+      <section>
+        <div>
+          <p class="wpm">WPM: <span id="wpm">0</span></p>
+          <p class="accuracy">Accuracy: <span id="accuracy">100%</span></p>
+          <p class="time">Time: <span id="time">0:60</span></p>
+        </div>
 
-  Difficulty:
-  Easy
-  Medium
-  Hard
+        <div>
+          <select
+            name="difficulty"
+            id="difficulty-mobile"
+            class="difficulty-mobile"
+          >
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
 
-  Mode:
-  Timed (60s)
-  Passage
+          <form
+            name="difficulty"
+            id="difficulty-desktop"
+            class="difficulty-desktop"
+          >
+            <label>Difficulty: </label>
+            <input type="button" value="Easy" />
+            <input type="button" value="Medium" />
+            <input type="button" value="Hard" />
+          </form>
 
-  <!-- Passage -->
+          <select name="mode" id="mode-mobile" class="mode-mobile">
+            <option value="timed(60s)">Timed (60s)</option>
+            <option value="passage">Passage</option>
+          </select>
 
-  Start Typing Test
-  Or click the text and start typing
+          <form name="mode" id="mode-desktop" class="mode-desktop">
+            <label>Mode: </label>
+            <input type="button" value="Timed (60s)" />
+            <input type="button" value="Passage" />
+          </form>
+        </div>
+      </section>
 
-  <!-- Test Complete Start -->
+      <textarea></textarea>
+    </main>
 
-  Test Complete!
-  Solid run. Keep pushing to beat your high score.
-
-  WPM: <!-- WPM -->
-  Accuracy: <!-- Accuracy -->
-  Characters: <!-- Correct/Incorrect -->
-
-  Go Again
-  
-  <!-- Test Complete End -->
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge"
+          >Frontend Mentor</a
+        >
+        | Coded by
+        <a href="https://github.com/grace-sampao" target="_blank"
+          >Grace Sampao</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
