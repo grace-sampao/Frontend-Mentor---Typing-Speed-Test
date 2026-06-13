@@ -1,10 +1,151 @@
+:root {
+  --neutral-900: hsl(0, 0%, 7%);
+  --neutral-800: hsl(0, 0%, 15%);
+  --neutral-500: hsl(240, 3%, 46%);
+  --neutral-400: hsl(240, 1%, 59%);
+  --neutral-0: hsl(0, 0%, 100%);
+
+  --blue-600: hsl(214, 100%, 55%);
+  --blue-400: hsl(210, 100%, 65%);
+
+  --red-500: hsl(354, 63%, 57%);
+
+  --green-500: hsl(140, 63%, 57%);
+
+  --yellow-400: hsl(49, 85%, 70%);
+}
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.sora-regular {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sora-semibold {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.sora-bold {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
 @media screen and (min-width: 320px) and (max-width: 1439px) {
+  body {
+    background-color: var(--neutral-900);
+    width: 19rem;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .personal-best-score {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+  }
+
+  #personal-best {
+    color: var(--neutral-500);
+  }
+
+  #personal-best-score {
+    color: var(--neutral-400);
+  }
+
+  .wpm-accuracy-time {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 1rem;
+    height: 3rem;
+  }
+
+  .wpm-accuracy-time > p {
+    display: grid;
+    align-content: space-between;
+    text-align: center;
+    color: var(--neutral-500);
+  }
+
+  .wpm {
+    justify-self: left;
+  }
+
+  .time {
+    justify-self: right;
+  }
+
+  #wpm,
+  #accuracy,
+  #time {
+    color: var(--neutral-0);
+  }
+
+  .drop-down-menus {
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    justify-content: space-between;
+  }
+
+  select {
+    height: 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    background: none;
+    color: var(--neutral-400);
+    border-color: var(--neutral-400);
+    border-width: 0.075rem;
+  }
+
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: var(--neutral-400);
+  }
+
   form#difficulty-desktop {
     display: none;
   }
 
   form#mode-desktop {
     display: none;
+  }
+
+  footer {
+    margin-top: 1rem;
+  }
+
+  footer p {
+    font-size: 0.6rem;
+    text-align: center;
+    color: var(--neutral-400);
+  }
+
+  footer a {
+    text-decoration: none;
+    color: var(--neutral-0);
+  }
+
+  footer a:visited {
+    text-decoration: none;
+    color: var(--neutral-0);
   }
 }
 

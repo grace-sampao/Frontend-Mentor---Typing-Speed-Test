@@ -12,6 +12,12 @@
     />
     <link rel="stylesheet" href="./style.css" />
 
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Sora:wght@700&display=swap");
+    </style>
+
     <title>Frontend Mentor | Typing Speed Test</title>
   </head>
   <body>
@@ -33,24 +39,32 @@
           src="./assets/images/icon-personal-best.svg"
           alt="icon-personal-best"
         />
-        <p class="personal-best" id="personal-best">Best:</p>
-        <p class="personal-best-score" id="personal-best-score">92 WPM</p>
+        <p class="personal-best sora-regular" id="personal-best">Best:</p>
+        <p class="personal-best-score sora-regular" id="personal-best-score">
+          92 WPM
+        </p>
       </div>
     </header>
 
     <main>
       <section>
-        <div>
-          <p class="wpm">WPM: <span id="wpm">0</span></p>
-          <p class="accuracy">Accuracy: <span id="accuracy">100%</span></p>
-          <p class="time">Time: <span id="time">0:60</span></p>
+        <div class="wpm-accuracy-time">
+          <p class="wpm sora-regular">
+            WPM: <span id="wpm" class="sora-bold">0</span>
+          </p>
+          <p class="accuracy sora-regular">
+            Accuracy: <span id="accuracy" class="sora-bold">100%</span>
+          </p>
+          <p class="time sora-regular">
+            Time: <span id="time" class="sora-bold">0:60</span>
+          </p>
         </div>
 
-        <div>
+        <div class="drop-down-menus">
           <select
             name="difficulty"
             id="difficulty-mobile"
-            class="difficulty-mobile"
+            class="difficulty-mobile sora-regular"
           >
             <option value="easy">Easy</option>
             <option value="medium">Medium</option>
@@ -68,7 +82,7 @@
             <input type="button" value="Hard" />
           </form>
 
-          <select name="mode" id="mode-mobile" class="mode-mobile">
+          <select name="mode" id="mode-mobile" class="mode-mobile sora-regular">
             <option value="timed(60s)">Timed (60s)</option>
             <option value="passage">Passage</option>
           </select>
@@ -81,17 +95,22 @@
         </div>
       </section>
 
+      <hr />
+
       <textarea></textarea>
     </main>
 
-    <footer class="attribution">
-      <p>
+    <footer>
+      <p class="sora-regular">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge"
+        <a href="https://www.frontendmentor.io?ref=challenge" class="sora-bold"
           >Frontend Mentor</a
         >
         | Coded by
-        <a href="https://github.com/grace-sampao" target="_blank"
+        <a
+          href="https://github.com/grace-sampao"
+          target="_blank"
+          class="sora-bold"
           >Grace Sampao</a
         >
       </p>
