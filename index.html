@@ -23,6 +23,8 @@
   <body>
     <header>
       <picture>
+        <p class="title">Typing Speed Test</p>
+
         <source
           media="(min-width:1440px)"
           srcset="./assets/images/logo-large.svg"
@@ -39,7 +41,8 @@
           src="./assets/images/icon-personal-best.svg"
           alt="icon-personal-best"
         />
-        <p class="personal-best sora-regular" id="personal-best">Best:</p>
+        <p class="personal-best-mobile sora-regular">Best:</p>
+        <p class="personal-best-desktop sora-regular">Personal Best:</p>
         <p class="personal-best-score sora-regular" id="personal-best-score">
           92 WPM
         </p>
@@ -60,7 +63,7 @@
           </p>
         </div>
 
-        <div class="drop-down-menus">
+        <div class="menus">
           <select
             name="difficulty"
             id="difficulty-mobile"
@@ -74,7 +77,7 @@
           <form
             name="difficulty"
             id="difficulty-desktop"
-            class="difficulty-desktop"
+            class="difficulty-desktop sora-regular"
           >
             <label>Difficulty: </label>
             <input type="button" value="Easy" />
@@ -87,7 +90,7 @@
             <option value="passage">Passage</option>
           </select>
 
-          <form name="mode" id="mode-desktop" class="mode-desktop">
+          <form name="mode" id="mode-desktop" class="mode-desktop sora-regular">
             <label>Mode: </label>
             <input type="button" value="Timed (60s)" />
             <input type="button" value="Passage" />
